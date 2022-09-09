@@ -18,3 +18,4 @@ CASE
 FROM fct_reviews AS r
 LEFT JOIN full_moon_dates AS fm
     ON (TO_DATE(r.review_date) = DATEADD(DAY, 1, fm.full_moon_date))
+
