@@ -17,3 +17,4 @@ WHERE review_text IS NOT NULL
     AND review_date > (SELECT MAX(review_date) FROM {{ this }})
 {% endif %}
 
+
